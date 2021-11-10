@@ -64,7 +64,7 @@ Ensure you have selected a single subscription context
 ``` AZ LOGIN; az account set --subscription {subscriptionID} ``` 
 ```shell
 #az login --use-device-code
-#az account set --subscription 78020cde-0dd8-4ac6-a6d4-21bac00fb343
+#az account set --subscription 6193053b-408b-44d0-b20f-4e29b9b67394
 #Define starting variables
 rnd=$RANDOM
 fnName=fn-honeyPot-$rnd

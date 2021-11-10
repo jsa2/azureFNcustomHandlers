@@ -1,15 +1,18 @@
 # Azure Functions custom handler demo for express
 
 ## Solution description
-This is just a demo solution. I wrote earlier a blog about customHandlers if you are interested to know more about them
-https://securecloud.blog/2021/01/04/express-js-middlewares-on-azure-functions-via-custom-handlers/
+This is just a demo solution. if you are interested to know more about Azure Functions Custom Handlers , I've previously written a blog [here](https://securecloud.blog/2021/01/04/express-js-middlewares-on-azure-functions-via-custom-handlers/
+)
 
 **Why did I test this?**
 
-- I am spoiled by the pricing model of Azure Functions, thus I wanted to have Consumption based web app for very simple implementations (site load is billed per consumption pricing for functions, in theory with lot of siteloads, this could also become more costly) 
-- I wanted to test streaming implementation using Azure Functions there is router [/stream](azapp/routes/stream.js) in the project
+- I am spoiled by the pricing model of Azure Functions, thus I wanted to have consumption based web app for very simple implementations (site load is billed per consumption pricing for functions. With lot of siteloads, this could also become more costly) 
+- I wanted to test proxying implementation using Azure Functions. There is express router [/proxy](azapp/routes/stream.js) in the project
+--- 
 
 Is this supported? (or better, is it recommended 😎 ?) That depends alot. For anything in production I would use different services (Azure App service, Azure Container Apps, Azure Static Web apps etc)
+
+--- 
 
 ![img](azapp/public/images/func.png)
 
@@ -20,10 +23,11 @@ Read [License](#license)
 ## Table of contents
 - [Azure Functions custom handler demo for express](#azure-functions-custom-handler-demo-for-express)
   - [Solution description](#solution-description)
+  - [- I wanted to test proxying implementation using Azure Functions. There is express router /proxy in the project](#--i-wanted-to-test-proxying-implementation-using-azure-functions-there-is-express-router-proxy-in-the-project)
   - [Disclaimer](#disclaimer)
   - [Table of contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
-  - [What is used in demo](#what-is-used-in-demo)
+  - [What is used in the demo](#what-is-used-in-the-demo)
   - [Installation](#installation)
     - [CLI script](#cli-script)
   - [After testing](#after-testing)
@@ -41,9 +45,9 @@ Requirement | description | Install
 ✅ Azure Function Core Tools and VScode with Azure Functions extension  | if you want to add new templates) to this function and debug locally |[Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v3%2Clinux%2Ccsharp%2Cportal%2Cbash%2Ckeda#v2)
 
 
-## What is used in demo
-- Bootstrap from W3schools
-- simple clientside JS stuff
+## What is used in the demo
+- Bootstrap from [W3schools](https://www.w3schools.com/bootstrap/)
+- simple client side .JS [public](azapp/public/javascripts/test.js)
 - express generator basic express app
 
 ## Installation

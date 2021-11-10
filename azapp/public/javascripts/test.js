@@ -6,5 +6,5 @@ function doJS() {
 
 function redirect() {
   
-    window.location.href = `/stream`
+    window.location.href = `/proxy`
   }

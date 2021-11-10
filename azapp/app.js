@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/stream', require('./routes/stream'));
+app.get('/proxy', require('./routes/stream'));
 app.get('/', usersRouter);
 
 app.listen(port,() => {

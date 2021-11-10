@@ -1,0 +1,26 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    },
+    "logLevel": {
+      "default": "Information"
+    }
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[1.*, 3.0.0)"
+  },
+  "customHandler": {
+    "description": {
+      "defaultExecutablePath": "node",
+      "defaultWorkerPath": "azapp/app.js"
+    },
+    "enableForwardingHttpRequest": true
+  },
+  "extensions": {"http": {"routePrefix": ""}}
+}

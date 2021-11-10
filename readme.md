@@ -46,9 +46,10 @@ Requirement | description | Install
 
 
 ## What is used in the demo
+
 - Bootstrap from [W3schools](https://www.w3schools.com/bootstrap/)
-- simple client side .JS [public](azapp/public/javascripts/test.js)
-- express generator basic express app
+- Simple client side .JS [public](azapp/public/javascripts/test.js)
+- [Express Generator](https://expressjs.com/en/starter/generator.html)
 
 ## Installation
 

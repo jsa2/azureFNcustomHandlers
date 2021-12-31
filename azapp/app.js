@@ -16,6 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/proxy', require('./routes/stream'));
 app.get('/', usersRouter);
+app.get('/users', require('./routes/users'));
 
 app.listen(port,() => {
     console.log('runnings12', port)
